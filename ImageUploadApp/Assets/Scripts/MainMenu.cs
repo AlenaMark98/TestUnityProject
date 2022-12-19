@@ -6,21 +6,24 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     private ImageUpload ImgUpload;
-    public Image photo;
+    public List<Image> picture = new List<Image>();
 
     void Start()
     {
-        //ImgUpload = GameObject.Find("Photo").GetComponent<ImageUpload>();
-        ImgUpload = photo.GetComponent<ImageUpload>();
-    }
 
+    }
     void Update()
     {
         
     }
 
     public void BTLoadImage() 
-    {
-        ImgUpload.StartCoroutine(ImgUpload.LoadImage());
+    {       
+        for (int i = 0; i < picture.Count; i++)
+        {
+            ImgUpload = picture[i].GetComponent<ImageUpload>();
+            ImgUpload.StartCoroutine(ImgUpload.LoadImage());
+            Debug.Log("BTLoad");
+        }
     }
 }

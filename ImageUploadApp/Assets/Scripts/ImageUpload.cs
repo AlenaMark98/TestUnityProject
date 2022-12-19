@@ -4,17 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
+
 public class ImageUpload : MonoBehaviour
 {
-    [SerializeField] private string _url;
+    [SerializeField] private string _url = "https://picsum.photos/300";
 
     private Image _img;
 
     void Start()
     {
         _img = GetComponent<Image>();
-
-        //StartCoroutine(LoadImage());
     }
 
     public IEnumerator LoadImage()
@@ -30,9 +29,8 @@ public class ImageUpload : MonoBehaviour
         {
             Texture texture = ((DownloadHandlerTexture)webRequest.downloadHandler).texture;
             _img.sprite = Sprite.Create((Texture2D)texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
-            Debug.Log(_img.sprite.name);
+            Debug.Log("Load Image");
         }
-
     }
 
 }
