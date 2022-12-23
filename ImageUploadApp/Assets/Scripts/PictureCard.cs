@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using UnityEngine.Networking;
 
 public class PictureCard : MonoBehaviour
 {
@@ -15,8 +12,7 @@ public class PictureCard : MonoBehaviour
     [SerializeField] private Transform _backCard;
     private Transform card;
 
-    private Sequence Seq;
-
+    LoadImage LoadImg;
     private void Awake()
     {
         card = this.GetComponent<Transform>();
@@ -27,6 +23,12 @@ public class PictureCard : MonoBehaviour
     void Start()
     {
         _img = _picture.GetComponent<Image>();
+        LoadImg = GameObject.Find("ImageLoadManager").GetComponent<LoadImage>();
+    }
+
+    public void SetSpritePicture(Sprite sprite)
+    {
+        _img.sprite = sprite;
     }
 
     public void WhenImageReady()
@@ -50,14 +52,13 @@ public class PictureCard : MonoBehaviour
         //---------example AsyncAwait
         AsyncAwait.GetLoadTextureAsync(_url, (Texture2D texture2D) =>
         {
-            Debug.Log("Success! ");
             Sprite sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), Vector2.zero);
-            _img.sprite = sprite;
-            openCard(true);
-        });
-       
-    }
+            SetSpritePicture(sprite);
 
+            openCard(true);
+            StartCoroutine(LoadImg.interactableBTCancelCoroutine(false));
+        });
+    }
 
     public void openCard(bool open)
     {
