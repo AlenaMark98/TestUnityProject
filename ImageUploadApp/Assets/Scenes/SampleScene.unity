@@ -377,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -80
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -583,7 +583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 80
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -680,7 +680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -400
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -897,7 +897,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1499753375}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: LoadImage, Assembly-CSharp
         m_MethodName: BTLoadImage
         m_Mode: 1
         m_Arguments:
@@ -1290,7 +1290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -240
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1496,7 +1496,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1499753375}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: LoadImage, Assembly-CSharp
         m_MethodName: BTCancel
         m_Mode: 1
         m_Arguments:
@@ -1973,7 +1973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 240
+      value: -240
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2290,7 +2290,6 @@ MonoBehaviour:
   _bTLoad: {fileID: 421476763}
   _bTCancel: {fileID: 1033049581}
   _dropdown: {fileID: 1408636557}
-  btCancel: 0
 --- !u!4 &1499753376
 Transform:
   m_ObjectHideFlags: 0
@@ -2960,19 +2959,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 400
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 5054139863028968863, guid: 74f8bc8a5d26e654e96e03436177bea3, type: 3}
       propertyPath: m_AnchoredPosition.y

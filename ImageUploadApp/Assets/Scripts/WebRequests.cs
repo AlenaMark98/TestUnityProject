@@ -19,7 +19,7 @@ public static class WebRequests
         }
     }
 
-    public static void GetTexture(string url, Action<string> onError, Action<Texture2D> onSuccess) 
+    public static void GetTextureCoroutine(string url, Action<string> onError, Action<Texture2D> onSuccess) 
     {
         Init();
         webRequestsMonoBehaviour.StartCoroutine(LoadTextureCoroutine(url, onError, onSuccess));
